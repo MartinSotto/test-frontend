@@ -1,0 +1,26 @@
+.login {
+  padding: {
+    top: 8em;
+  }
+
+  @media only screen and (max-width: 600px) {
+    padding: {
+      top: 5em;
+    }
+  }
+
+  label {
+    &:after {
+      margin: 0 0 0 .2em !important;
+      color: rgba(0, 0, 0, .3) !important;
+      content: '- REQUIRED' !important;
+    }
+  }
+
+  .forgot-password {
+    display: inline-block;
+    margin: {
+      bottom: 30px;
+    }
+  }
+}

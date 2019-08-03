@@ -5,7 +5,7 @@ export default class AppState {
   @computed get isLogged () {
     return this.logged
   }
-  authenticate (email = '', password = '') {
+  authenticate = (email = '', password = '') => {
     this.logged = (email === 'mail@mail.com' && password === '123123')
   }
 }

@@ -8,6 +8,7 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom'
+import AboutUs from './App/AboutUs'
 import Login from './Public/Main'
 import Home from './App/Home'
 
@@ -31,6 +32,7 @@ export default class App extends Component {
     } else {
       routes = <Switch>
         <Route exact path='/' component={Home} />
+        <Route exact path='/about-us' component={AboutUs} />
         <Redirect to='/' />
       </Switch>
     }
